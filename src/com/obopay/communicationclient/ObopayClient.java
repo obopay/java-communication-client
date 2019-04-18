@@ -346,8 +346,7 @@ public final class ObopayClient {
 	 */
 	private HttpURLConnection createHttpConnection(String apiName) throws IOException {
 
-		StringBuilder sb = new StringBuilder("https://").append(this.hostName).append(":").append(this.port).append("/")
-				.append(this.protocolVersion).append("/").append(this.cid);
+		StringBuilder sb = new StringBuilder("https://").append(this.hostName).append(":").append(this.port);
 
 		if (!apiName.startsWith("/")) {
 			sb.append("/");
